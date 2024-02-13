@@ -1,4 +1,4 @@
-# lodics-homepage-renewal
+# homepage-renewal
 기존 Flash 홈페이지를 React+Next.js 기반으로 홈페이지 리뉴얼
 - 개발 기간: 2020.01 ~ 2020.02
 - 개발 환경: React, Next.js, Ant Design, Styled Components
