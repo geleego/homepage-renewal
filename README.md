@@ -134,3 +134,35 @@ yarn build
  ┣ 📜package.json                    # 패키지 모듈 세팅 설정 파일
  ┗ 📜README.md                       # readme 파일
 ```
+
+## 패키지 모듈
+### 프로젝트 의존성
+- 메인 의존성 (dependencies)
+``` 
+ - build시, 해당 라이브러리들이 함께 배포됨
+ - 아래의 명령어들을 통해 세팅함
+ - yarn add <package>          
+   - <package>: 설치할 라이브러리 명칭
+```
+| 패키지 | 버전 | 설명 | 
+| ------ | ------ | ------ |
+| antd | 4.18.0 | react 프로젝트에서 쉬운 ui 개발을 위한 라이브러리 |
+| next | 12.0.7 | react 프로젝트에서 ssr, ssg를 위한 라이브러리 |
+| react | 17.0.2 | 사용자 인터페이스를 만들기 위한 js 라이브러리 |
+| react-dom | 17.0.2 | react 프로젝트에서 dom 작업을 위한 라이브러리 |
+| react-icons | 4.3.1 | react 프로젝트에서 icon을 쉽게 사용하기 위한 라이브러리 |
+| styled-components | 5.3.3 | js 안에 css를 작성하기 위한 라이브러리 |
+
+- 개발 의존성 (devDependencies)
+``` 
+ - build시, 해당 라이브러리들이 함께 배포 되지 않음
+ - 개발에서만 사용되는 라이브러리들을 세팅 
+ - 아래의 명령어를 통해 세팅함
+ - yarn add <package> --dev
+   - <package>: 설치할 라이브러리 명칭
+``` 
+| 패키지 | 버전 | 설명 | 
+| ------ | ------ | ------ |
+| babel-plugin-styled-components | 2.0.2 | styled-components의 디버그를 편하게 하기 위한 라이브러리 |
+| eslint | 8.5.0 | js 코드를 분석해 문법적 오류나 패턴을 식별해 일관된 스타일로 작성하기 위한 라이브러리 |
+| eslint-config-next | 12.0.7 | next.js에 종속되어 코드를 분석해 문법적 오류나 패턴을 식별해 일관된 스타일로 작성하기 위한 라이브러리 |
